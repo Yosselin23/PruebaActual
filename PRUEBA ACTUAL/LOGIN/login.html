@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>I'm Pardi Template | Materialize</title>
+  <!-- CSS  -->
+  <link href="img/favicon.jpg" rel="shortcut icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body class="page-login">
+  <div class="center">
+      <div class="card bordered z-depth-2" style="margin:0% auto; max-width:400px;">
+        <div class="card-header">
+           <i class="material-icons medium white-text">perm_identity</i>
+
+        </div>
+        <div class="card-content">
+          <form>
+            <div class="input-field col s12">
+              <input id="username" type="text" class="validate">
+              <label for="username">Username</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+            <br>
+              <input type="checkbox" class="filled-in" id="filled-in-box"/>
+              <label for="filled-in-box">Remember me</label>
+              <button type="button" id="mulai_login" name="mulai_login" class="btn blue-grey right waves-effect waves-light white-text">Login</button>
+          </form>
+        </div>
+        <div class="card-action clearfix">
+          <div class="row">
+            <div class="col s6 text-p">
+              <a href="#" class="orange-text tooltipped" data-position="top" data-delay="50" data-tooltip="Forgot your password?">Forgot your password?</a>
+            </div>
+            <div class="col s6 right-align text-p">
+              <a href="#" class="orange-text tooltipped" data-position="top" data-delay="50" data-tooltip="Register now!">Register now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script type="text/javascript">
+    $(".button-collapse").sideNav();
+  </script>
+  <script type="text/javascript">    
+    $('#mulai_login').click(function(){
+      var username = $('#username').val();
+      var password = $('#password').val();
+      
+      var datas = "username="+username+"&password="+password;
+      
+      $.ajax({
+          type: "POST",
+          url: "aksi_login.php",
+          data: datas
+      }).done(function( data ) {
+          $('#info_login').html(data);
+          
+      });
+    });   
+  </script>
+  <span id="info_login"></span>
+  </body>
+</html>

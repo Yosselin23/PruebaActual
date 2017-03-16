@@ -1,0 +1,30 @@
+
+.h1{
+	color: #ff3d00;
+	font-family: sans-serif;
+	position: center;
+	font-size: 1;
+	text-align: center;
+
+}
+
+.p1{
+	color: #ff3d00;
+	font-family: serif;
+	position: center;
+	text-align: center;
+}
+
+.imagen{
+	background-position: center;
+	height: 800px;
+	width: 800px;
+	position:center;
+	margin-left: 250px;
+
+}
+
+.body{
+	background-color: #00e676;
+
+}

@@ -1,0 +1,123 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 700px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.LogoPrincipal{
+  height: 300px;
+  width: 300px;
+}
+
+.logo{
+  width: 60px;
+  height: 60px;
+
+}
+
+.parallaxcontainer2 {
+  min-height: 500px;
+  line-height: 0;
+  height: auto;
+  background-color: transparent;
+
+  }
+
+
+.parallaxcontainer3 {
+  min-height: 200px;
+  line-height: 0;
+  height: auto;
+  background-color: transparent;
+
+  }
+
+  .table2 {
+   width: 100%;
+       margin: 60px;     
+    width: 480px; 
+    text-align: left;    
+    border-collapse: collapse; 
+    text-align: center;
+    position: center;
+
+}
+
+.parallaxcontainer4 {
+  min-height: 250px;
+  line-height: 0;
+  height: auto;
+    }
+
+ 
+  .ImagenesFuncion{
+    width: 120px;
+    height: 150px;
+    background-position: center;
+  }
+
+ .ImagenEquipo{
+    width: 100px;
+    height: 100px;
+    background-position: center;
+  }
+
+
+.HistoriaDEKIDS{
+  width: 80%;
+    height: 80%;
+    background-position: center;
+
+}
